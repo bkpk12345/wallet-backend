@@ -16,7 +16,7 @@
 
 ## APIS to hit
 
-### To setup the wallet with initial amount
+### 1. To setup the wallet with initial amount
 
 POST http://localhost:8001/api/setup
 Content-Type: application/json
@@ -26,11 +26,11 @@ Content-Type: application/json
 "name":"new data"
 }
 
-### To get the wallet details
+### 2. To get the wallet details
 
 GET http://localhost:8001/api/wallet/63a3db0d21051bc786965153
 
-### To do the transaction. Credit or debit amount
+### 3. To do the transaction. Credit or debit amount
 
 POST http://localhost:8001/api/transact/63a3db0d21051bc786965153
 Content-Type: application/json
@@ -40,6 +40,6 @@ Content-Type: application/json
 "name":"new data"
 }
 
-### To get all the transactions
+### 4. To get all the transactions
 
 GET http://localhost:8001/api/transactions?walletId=63a3db0d21051bc786965153&skip=0&limit=10
