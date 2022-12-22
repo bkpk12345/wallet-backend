@@ -27,7 +27,7 @@ app.use((err, req, res, next) => {
   return res.status(final_error.statusCode).send(final_error);
 });
 
-const port = process.env.PORT;
+const port = process.env.PORT ?? 8001;
 
 app.listen(port, () => {
   console.log("server listening to port:", port);
